@@ -10,7 +10,7 @@ const Description = () => {
           <p className="text-center text-[22px] text-darkGrey mt-[17px] mx-[40px] mb-[48px]">{item.text}</p>
           <Link href={item.link} className="text-[18px] leading-[27px] text-darkGrey flex items-center justify-center gap-[6px] hover:text-lightBrown">
             <p className="">View more</p>
-            <img src="/icons/arrowRight.svg" alt="" />
+            <img src="/icons/arrowRight.svg" alt="arrow right" />
           </Link>
         </div>
       ))}

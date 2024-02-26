@@ -1,3 +1,4 @@
+import ContactUs from "./components/ContactUs";
 import Description from "./components/Description";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -11,6 +12,7 @@ export default function Home() {
         <Header />
         <Intro />
         <Description />
+        <ContactUs />
       </main>
     </div>
   );

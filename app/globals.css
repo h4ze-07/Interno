@@ -10,3 +10,11 @@
     background-position: center;
     background-size: cover;
 }
+
+.contactBg {
+    background-image: url('/images/contactBg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 326px 0px 123px;
+}
