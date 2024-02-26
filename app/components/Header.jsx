@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Header = () => {
   return (
-    <div className="max-w-[1200px] w-full flex justify-between mt-[26px]">
+    <header className="max-w-[1200px] w-full flex justify-between mt-[26px] my-[0px] mx-auto">
         <Link href='/'>
             <Image 
                 src='/images/logo.png'
@@ -21,7 +21,7 @@ const Header = () => {
                 <Link key={link.name} href={link.link} className="mt-[12px] mb-[20px] hover:text-lightBrown">{link.name}</Link>
             ))}
         </nav>
-    </div>
+    </header>
   )
 }
 
