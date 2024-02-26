@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+.mainBg {
+    background-image: url('/images/main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
