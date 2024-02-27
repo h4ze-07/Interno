@@ -7,7 +7,7 @@ const Brands = () => {
 
         <div className="flex items-center justify-between mx-[55px]">
             {brands.map( i => (
-                <img key={i.id} src={i.photo} alt={i.alt} className="" />
+                <img key={i.id} src={i.photo} alt={i.alt} loading="lazy" />
             ))}
         </div>
 

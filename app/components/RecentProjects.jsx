@@ -3,17 +3,17 @@ import { recentProjects } from "../utils/links"
 
 const RecentProjects = () => {
   return (
-    <section className="max-w-[1220px] pb-[60px] mb-[80px]">
+    <section className="max-w-[1220px] pb-[40px] mb-[100px]">
 
-        <h2 className="mt-[15px] mb-[20px] text-[47px] font-heading leading-[62.4px] text-center text-darkBlue">Recent Projects</h2>
-        <p className="text-[22px] leading-[33px] text-darkGrey text-center">With tools to make every part of your process more human and a support team</p>
-        <p className="text-[22px] leading-[33px] text-darkGrey text-center">excited to help you, getting started with us never been easier.</p>
+        <h2 className="mt-[13px] mb-[21px] text-[48px] font-heading leading-[62.4px] text-center text-darkBlue">Recent Blogs</h2>
+        <p className="text-[22px] leading-[33px] text-darkGrey text-center">Get updates about our latest trends and techniques used in</p>
+        <p className="text-[22px] leading-[33px] text-darkGrey text-center">interior design project works.</p>
 
         <div className="grid grid-cols-2 grid-rows-2 mt-[70px] px-[10px] gap-x-[20px] gap-y-[60px]">
             {recentProjects.map(i => (
                 <div key={i.id}>
 
-                    <img src={i.photo} alt={i.title} className="rounded-tr-[80px]" />
+                    <img src={i.photo} alt={i.title} loading="lazy" className="rounded-tr-[80px]" />
 
                     <div className="flex justify-between mt-[25px]">
 
@@ -22,7 +22,7 @@ const RecentProjects = () => {
                             <p className="text-[22px] leading-[33px] text-darkGrey">{i.subtitle}</p>
                         </div>
 
-                        <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-[#F4F0EC] cursor-pointer">
+                        <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-[#FFECD9] cursor-pointer">
                             <img src="/icons/smArrowRight.svg" alt="small arrow right" />
                         </div>
                     </div>
