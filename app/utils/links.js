@@ -201,3 +201,100 @@ export const blogs = [
         date: 'November 23, 2021',
     },
 ]
+
+
+export const footerLinks = {
+    social: {
+        items: [
+            {
+                name: 'facebook',
+                icon: '/icons/facebook.svg',
+                link: '/',
+            },
+            {
+                name: 'x',
+                icon: '/icons/x.svg',
+                link: '/',
+            },
+            {
+                name: 'linkedin',
+                icon: '/icons/linkedin.svg',
+                link: '/',
+            },
+            {
+                name: 'instagram',
+                icon: '/icons/instagram.svg',
+                link: '/',
+            },
+        ]
+    },
+
+    pages: {
+        title: 'Pages',
+        items: [
+            {
+                id: 1,
+                name: 'Style Guide',
+                link: '/',
+            },
+            {
+                id: 2,
+                name: 'Protected',
+                link: '/',
+            },
+            {
+                id: 3,
+                name: 'Licenses',
+                link: '/',
+            },
+            {
+                id: 4,
+                name: 'Changelog',
+                link: '/',
+            },
+            {
+                id: 5,
+                name: '404',
+                link: '/',
+            },
+        ]
+    },
+
+    explore: {
+        title: 'Exlore',
+        items: [
+            {
+                id: 1,
+                name: 'About Us',
+                link: '/',
+            },
+            {
+                id: 2,
+                name: 'Recent Blog',
+                link: '/',
+            },
+            {
+                id: 3,
+                name: 'Pricing Plan',
+                link: '/',
+            },
+            {
+                id: 4,
+                name: 'Our Projects',
+                link: '/',
+            },
+            {
+                id: 5,
+                name: 'Contact Us',
+                link: '/',
+            },
+        ]
+    },
+
+    contact: {
+        title: 'Contact',
+        location: '53, East Birchwood Ave. Brooklyn, New York 11201, USA.',
+        email: 'contact@interno.com',
+        phone: '(123) 456 - 7890',
+    },
+}
