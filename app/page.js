@@ -1,5 +1,4 @@
 import Achievments from "./components/Achievments";
-import Blogs from "./components/Blogs";
 import Brands from "./components/Brands";
 import Connect from "./components/Connect";
 import ContactUs from "./components/ContactUs";
@@ -7,8 +6,9 @@ import Description from "./components/Description";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
-import RecentProjects from "./components/RecentProjects";
 import Testimonials from "./components/Testimonials";
+import RecentBlogs from "./components/RecentBlogs";
+import RecentProjects from "./components/RecentProjects";
 
 
 export default function Home() {
@@ -21,9 +21,9 @@ export default function Home() {
         <ContactUs />
         <Testimonials />
         <Brands />
-        <RecentProjects />
+        <RecentBlogs />
         <Achievments />
-        <Blogs />
+        <RecentProjects />
         <Connect />
       </main>
       <Footer />

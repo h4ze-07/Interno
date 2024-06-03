@@ -21,12 +21,13 @@ const Header = () => {
                 width={177}
                 height={50}
                 alt="logo"
+                className="w-[115px] md:w-[177px]"
                 />
         </Link>
 
-        <nav className="hidden md:flex items-center justify-center gap-[40px] text-darkBlue text-[19px] leading-[30px]">
+        <nav className="hidden md:flex items-center justify-center lg:gap-[40px] text-darkBlue text-[19px] leading-[30px]">
             {headerLinks.map(link => (
-                <Link key={link.name} href={link.link} className="mt-[12px] mb-[20px] hover:text-lightBrown">{link.name}</Link>
+                <Link key={link.name} href={link.link} className="mx-[20px] whitespace-nowrap hover:text-lightBrown">{link.name}</Link>
             ))}
         </nav>
 
@@ -39,7 +40,7 @@ const Header = () => {
                   <IoMdClose className="w-[32px] h-[32px]" />
               }
             </button>
-            <div className={`${navMenu ? "flex" : "hidden"} absolute justify-center top-[60px] -right-[8px] gap-2 bg-[#FFF] px-5 py-4 rounded-bl-[30px]`}>
+            <div className={`${navMenu ? "flex" : "hidden"} absolute justify-center top-[50px] -right-[8px] gap-2 bg-[#FFF] px-5 py-4 rounded-bl-[30px]`}>
               {headerLinks.map(link => (
                   <Link key={link.name} href={link.link} className="hover:text-lightBrown whitespace-nowrap">{link.name}</Link>
               ))}

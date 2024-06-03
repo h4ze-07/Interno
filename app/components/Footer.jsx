@@ -5,9 +5,9 @@ import { footerLinks } from '../utils/links'
 
 const Footer = () => {
   return (
-    <footer className='max-w-[1400px] mt-[130px] mb-[50px] '>
+    <footer className='max-w-[1400px] mt-[130px] mb-[50px]'>
 
-      <div className='flex justify-between max-w-[1200px] mx-auto pb-[110px]'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] max-w-[1200px] mx-auto pb-[110px] px-4 '>
 
         <div>
           <Link href='/'>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         
         {/* PAGES */}
-        <article>
+        <article className='order-3'>
             <h4 className='font-heading text-[25px] leading-[37.5px] text-darkBlue mb-[22px]'>{footerLinks.pages.title}</h4>
             <div className='flex flex-col gap-[30px]'>
               {footerLinks.pages.items.map(item => (
@@ -41,7 +41,7 @@ const Footer = () => {
         {/* PAGES */}
 
         {/* EXPLORE */}
-        <article>
+        <article className='order-4'>
             <h4 className='font-heading text-[25px] leading-[37.5px] text-darkBlue mb-[22px]'>{footerLinks.explore.title}</h4>
             <div className='flex flex-col gap-[30px]'>
               {footerLinks.explore.items.map(item => (
@@ -52,7 +52,7 @@ const Footer = () => {
         {/* EXPLORE */}
         
         {/* CONTACT */}
-        <article>
+        <article className='order-2 lg:order-4'>
             <h4 className='font-heading text-[25px] leading-[37.5px] text-darkBlue mb-[22px]'>{footerLinks.contact.title}</h4>
             <p className='text-[22px] text-darkGrey leading-[33px] mb-[30px] max-w-[321px]'>{footerLinks.contact.location}</p>
             <p className='text-[22px] text-darkGrey leading-[33px] mb-[30px]'>{footerLinks.contact.email}</p>

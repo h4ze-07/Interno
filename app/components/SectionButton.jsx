@@ -5,7 +5,7 @@ const SectionButton = ({text, customBg, customTextColor, customArrowColor}) => {
 
 
   return (
-    <button type="button" className={`flex rounded-[18px] mt-[35px] ${customBg ? customBg : 'bg-darkBlue'} py-[18px] pl-[34px] pr-[18px] text-[18px] leading-[27px] w-fit items-center gap-[17px]`}>
+    <button type="button" className={`flex rounded-[18px] mt-[15px] md:mt-[35px] ${customBg ? customBg : 'bg-darkBlue'} py-[10px] pl-[15px] pr-[8px] text-[14px] md:py-[18px] md:pl-[34px] md:pr-[18px] md:text-[18px] md:leading-[27px] w-fit items-center gap-[17px]`}>
         <p className={customTextColor ? customTextColor : 'text-[#FFFFFF]'}>{text}</p>
         <CustomSvg color={customArrowColor ? customArrowColor : '#CDA274'} />
     </button>

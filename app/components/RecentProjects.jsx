@@ -1,35 +1,42 @@
-import { recentProjects } from "../utils/links"
+import { blogs } from "../utils/links"
 
 
 const RecentProjects = () => {
   return (
     <section className="max-w-[1220px] pb-[40px] mb-[100px]">
 
-        <h2 className="mt-[13px] mb-[21px] text-[48px] font-heading leading-[62.4px] text-center text-darkBlue">Recent Blogs</h2>
-        <p className="text-[22px] leading-[33px] text-darkGrey text-center">Get updates about our latest trends and techniques used in</p>
-        <p className="text-[22px] leading-[33px] text-darkGrey text-center">interior design project works.</p>
+        <h2 className="mt-[15px] mb-[20px] text-[32px] sm:text-[47px] font-heading leading-[62.4px] text-center text-darkBlue">Recent Projects</h2>
+        <p className="sm:text-[22px] leading-[33px] text-darkGrey text-center">With tools to make every part of your process more human and a support team</p>
+        <p className="sm:text-[22px] leading-[33px] text-darkGrey text-center">excited to help you, getting started with us never been easier.</p>
 
-        <div className="grid grid-cols-2 grid-rows-2 mt-[70px] px-[10px] gap-x-[20px] gap-y-[60px]">
-            {recentProjects.map(i => (
-                <div key={i.id}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto mt-[70px] px-[10px] gap-x-[20px] gap-y-[40px] max-w-[500px] md:max-w-[unset]"> 
 
-                    <img src={i.photo} alt={i.title} loading="lazy" className="rounded-tr-[80px]" />
+          {blogs.map(item => (
+            <article key={item.id} className="rounded-[62px] px-[21px] pt-[21px] border-[1px] border-[#E7E7E7]">
+              
+              <div className="relative max-w-[500px]">
 
-                    <div className="flex justify-between mt-[25px]">
+                <img src={item.photo} alt={item.photoTitle} loading="lazy" className="rounded-t-[45px]" />
 
-                        <div>
-                            <h3 className="text-darkBlue text-[24px] font-heading leading-[37.5px]">{i.title}</h3>
-                            <p className="text-[22px] leading-[33px] text-darkGrey">{i.subtitle}</p>
-                        </div>
+                <p className="absolute bottom-[29px] left-[24px] text-darkGrey leading-[24px] p-[10px] bg-[#FFFFFF] rounded-[8px] rounded-bl-none">{item.photoTitle}</p>
 
-                        <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-[#FFECD9] cursor-pointer">
-                            <img src="/icons/smArrowRight.svg" alt="small arrow right" />
-                        </div>
-                    </div>
+              </div>
 
+              <h3 className="font-heading text-[25px] max-w-[500px] leading-[35px] mt-[15px] pt-[10px] mb-[10px] text-darkBlue">{item.title}</h3>
+
+              <div className="flex justify-between items-center mb-[41px]">
+                <p className="text-darkGrey leading-[24px]">{item.date}</p>
+
+                <div className="flex items-center justify-center w-[52px] h-[52px] rounded-full bg-[#FFECD9] cursor-pointer">
+                  <img src="/icons/smArrowRight.svg" alt="small arrow right" />
                 </div>
-            ))}
+              </div>
+
+            </article>
+          ))}
+        
         </div>
+      
 
     </section>
   )

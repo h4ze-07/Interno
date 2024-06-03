@@ -3,7 +3,7 @@ import { achievs } from "../utils/links"
 
 const Achievments = () => {
   return (
-    <section className="max-w-[1440px] w-full bg-[#FFECD9] mb-[140px]">
+    <section className="max-w-[1440px] w-full bg-[#FFECD9] mb-[140px] hidden lg:block">
       
       <div className="max-w-[1200px] mx-auto my-[140px] flex justify-center">
         {achievs.map(item => (
