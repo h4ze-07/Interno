@@ -34,7 +34,7 @@ const Footer = () => {
             <h4 className='font-heading text-[25px] leading-[37.5px] text-darkBlue mb-[22px]'>{footerLinks.pages.title}</h4>
             <div className='flex flex-col gap-[30px]'>
               {footerLinks.pages.items.map(item => (
-                <Link key={item.id} href={item.link} className='text-[22px] text-darkGrey leading-[33px]'>{item.name}</Link>
+                <Link key={item.id} href={item.link} className='text-[22px] text-darkGrey leading-[33px] hover:text-lightBrown hover:font-semibold'>{item.name}</Link>
               ))}
             </div>
         </article>
@@ -45,7 +45,7 @@ const Footer = () => {
             <h4 className='font-heading text-[25px] leading-[37.5px] text-darkBlue mb-[22px]'>{footerLinks.explore.title}</h4>
             <div className='flex flex-col gap-[30px]'>
               {footerLinks.explore.items.map(item => (
-                <Link key={item.id} href={item.link} className='text-[22px] text-darkGrey leading-[33px]'>{item.name}</Link>
+                <Link key={item.id} href={item.link} className='text-[22px] text-darkGrey leading-[33px] hover:text-lightBrown hover:font-semibold'>{item.name}</Link>
               ))}
             </div>
         </article>
@@ -64,7 +64,7 @@ const Footer = () => {
       
       <div className='w-full border-t-[1px] border-[#E5E5E5] py-[35px]'>
         <p className='text-center text-[22px] text-darkGrey leading-[33px]'>Copyright © Interno | Created by  
-          <Link href={'https://github.com/h4ze-07'} className='text-lightBrown text-[24px]'> Haze</Link>
+          <Link href={'https://github.com/h4ze-07'} target='_blank' className='text-lightBrown text-[24px]'> Haze</Link>
         </p>
         
       </div>

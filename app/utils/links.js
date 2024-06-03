@@ -1,23 +1,23 @@
 export const headerLinks = [
     {
         name: 'Home',
-        link: '/home',
+        link: '/',
     },
     {
         name: 'About Us',
-        link: '/about',
+        link: '/',
     },
     {
         name: 'Services',
-        link: '/services',
+        link: '/',
     },
     {
         name: 'Pages',
-        link: '/pages',
+        link: '/',
     },
     {
         name: 'Contact Us',
-        link: '/contact',
+        link: '/',
     },
 ]
 
@@ -154,7 +154,6 @@ export const achievs = [
 
 
 
-'FFECD9'
 
 
 export const blogs = [
